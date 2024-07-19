@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FocusTimer 2.0!</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script type="module" src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="./assets/sounds-timer/" />
+  </head>
+  <body>
+    <main>
+      <section class="timer-and-controls">
+        <div class="time">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+
+        <div id="controls">
+          <button data-action="toggleRunning" class="play-circle">
+            <i class="ph-bold ph-play-circle"></i>
+            <span class="sr-only">Iniciar contador</span>
+          </button>
+          <button data-action="toggleRunning" class="pause-circle">
+            <i class="ph-bold ph-pause-circle"></i>
+            <span class="sr-only">Fehcar contador</span>
+          </button>
+
+          <button data-action="reset" class="ph-stop-circle">
+            <i class="ph-bold ph-stop-circle"></i>
+            <span class="sr-only">Resetar contador</span>
+          </button>
+          <button data-action="set" class="clock">
+            <i class="ph-bold ph-clock"></i>
+            <span class="sr-only">Mudar valor do contador</span>
+          </button>
+
+          <button data-action="plus">
+            <i class="ph-bold ph-plus-circle"></i>
+            <span class="sr-only">Somar 5 minutos ao contador</span>
+          </button>
+          <button data-action="minus">
+            <i class="ph-bold ph-minus-circle"></i>
+            <span class="sr-only">Subtrair 5 minutos do contador</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="background-Sounds">
+        <button data-image="tree" id="tree">
+          <img src="./assets/images/Tree.svg" alt="Tree Vector" id="tree" />
+          <span class="sr-only">Música de fundo de floresta</span>
+        </button>
+        <button data-image="rain" id="rain">
+          <img
+            src="./assets/images/rain.svg"
+            alt="Cloud Descending Rain Vector"
+            id="rain"
+          />
+          <span class="sr-only">Música de fundo de chuva</span>
+        </button>
+        <button data-image="cafeteria" id="cafeteria">
+          <img
+            src="./assets/images/Cafeteria.svg"
+            alt="Vector of a coffee shop ..."
+            id="shop"
+          />
+          <span class="sr-only">Música de fundo em um cafeteria</span>
+        </button>
+        <button data-image="fire" id="fire">
+          <img src="./assets/images/fire.svg" alt="Fire Vector" id="fire" />
+          <span class="sr-only">Música de fundo de foqueira</span>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
